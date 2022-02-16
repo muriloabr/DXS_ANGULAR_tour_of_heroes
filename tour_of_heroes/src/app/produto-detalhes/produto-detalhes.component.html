@@ -1,0 +1,9 @@
+<h2>Detalhes do Produto</h2>
+<div *ngIf="produto">
+  <h3>{{ produto.nome }}</h3>
+  <h4>{{ produto.preco | currency:'BRL':true:'1.2-2' }}</h4>
+  <del *ngIf="produto.preco > 2000"> 
+    <h2>{{ produto.preco*1.5 | currency:'BRL':true:'1.2-2' }}</h2>
+  </del>
+  <p>{{ produto.descricao }}</p>
+</div>

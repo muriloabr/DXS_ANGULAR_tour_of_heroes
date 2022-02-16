@@ -1,13 +1,18 @@
 <h2>Nossos Produtos</h2>
 <div *ngFor="let produto of produtos">
     <h3>
-        <a [title]="'Veja mais detalhes de: ' + produto.nome">
+        <a [title]="'Veja mais detalhes de: ' + produto.nome"
+        [routerLink]="['/produto', produto.id]">
         {{ produto.nome }}
         </a>
     </h3>
     <p *ngIf="produto.descricao">
         Descrição: <br>{{ produto.descricao }}
     </p>
+    <h4>{{ produto.preco | currency:'BRL':true:'1.2-2' }}</h4>
+    <del *ngIf="produto.preco > 2000"> 
+        <h2>{{ produto.preco*1.5 | currency:'BRL':true:'1.2-2' }}</h2>
+    </del>
     <button class="mb-2" type="button" (click)="compartilhar(produto.id)">
         Compartilhe!
     </button>
@@ -16,7 +21,6 @@
         (notificar) = "onNotificar()">
         <!--SETO A PROPRIEDADE DE INPUT DO COMPONENTE COM UM OBJETO DE Produto
             SETO O EVENTO notificar COM A FUNÇÃO onNotificar(), ENTÃO AO RECEBER ESSE EVENTO ELE CHAMA ESSA FUNÇÃO
-        -->
-        
+        -->        
     </app-produtos-alertas>
 </div>
