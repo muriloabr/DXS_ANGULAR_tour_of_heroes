@@ -7,13 +7,13 @@ export interface Produto {
 
 export const produtosRecebidos = [
   {
-    id: 1,
+    id: 4,
     nome: 'Phone XL',
     preco: 5899.99,
     descricao: 'Gigante e elegante'
   },
   {
-    id: 4,
+    id: 1,
     nome: 'Moto G200',
     preco: 1250.57,
     descricao: 'Três câmeras, alta resolução'

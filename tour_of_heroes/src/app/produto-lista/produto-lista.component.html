@@ -1,4 +1,4 @@
-<h2>Products</h2>
+<h2>Nossos Produtos</h2>
 <div *ngFor="let produto of produtos">
 
     <h3>
@@ -9,7 +9,7 @@
     <p *ngIf="produto.descricao">
         Descrição: <br>{{ produto.descricao }}
     </p>
-    <button type="button" (click)="compartilhar()">
+    <button type="button" (click)="compartilhar(produto.id)">
         Compartilhe!
       </button>
 </div>
