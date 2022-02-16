@@ -11,6 +11,7 @@ operadores: aritméticos, de atribuição, relacionais, lógicos, unários, bin�
 ![imagem da aplicação](https://dataxstudios.com.br/assets/images/github/angular_tour_of_heroes_2.PNG)
 
 
-**✨Atualizações da linguagem + comentários.**<br>
+**✨Atualizações da linguagem + comentários.**  
+
 Fiquem por dentro deste repositório com atualizações sempre que possível!  
 [ANGULAR] [JAVASCRIPT] [RXJS] #angular #javascript #rxjs
