@@ -1,34 +1,39 @@
-export interface Product {
+export interface Produto {
   id: number;
-  name: string;
-  price: number;
-  description: string;
+  nome: string;
+  preco: number;
+  descricao: string;
 }
 
-export const products = [
+export const produtosRecebidos = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    nome: 'Phone XL',
+    preco: 5899.99,
+    descricao: 'Gigante e elegante'
+  },
+  {
+    id: 4,
+    nome: 'Moto G200',
+    preco: 1250.57,
+    descricao: 'Três câmeras, alta resolução'
   },
   {
     id: 2,
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    nome: 'IPhone Mini',
+    preco: 2500.00,
+    descricao: ''    
+  },
+  {
+    id: 5,
+    nome: 'Samsung Galaxy Tab 2',
+    preco: 256.65,
+    descricao: 'Tela de 10", com bem ampla visão'
   },
   {
     id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
+    nome: 'LG LTE K4',
+    preco: 458.54,
+    descricao: ''
   }
 ];
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
