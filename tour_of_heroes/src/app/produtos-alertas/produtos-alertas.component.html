@@ -1,1 +1,5 @@
-<p>product-alerts works!</p>
+<!--SE produtoRecebido CONSEGUIU RECEBER UM VALOR VÁLIDO DO COMPONENTE PAI,
+    NÃO SENDO NULA E PRECO MAIOR QUE O INDICADO, GERARÁ UM BOTÃO -->
+<p class="mb-2" *ngIf="produtoRecebido && produtoRecebido.preco > 1500"> 
+    <button type="button" (click)="notificar.emit()">Me notifique!</button>
+</p>

@@ -1,6 +1,5 @@
 <h2>Nossos Produtos</h2>
 <div *ngFor="let produto of produtos">
-
     <h3>
         <a [title]="'Veja mais detalhes de: ' + produto.nome">
         {{ produto.nome }}
@@ -9,7 +8,15 @@
     <p *ngIf="produto.descricao">
         Descrição: <br>{{ produto.descricao }}
     </p>
-    <button type="button" (click)="compartilhar(produto.id)">
+    <button class="mb-2" type="button" (click)="compartilhar(produto.id)">
         Compartilhe!
-      </button>
+    </button>
+    <app-produtos-alertas
+        [produtoRecebido] = "produto" 
+        (notificar) = "onNotificar()">
+        <!--SETO A PROPRIEDADE DE INPUT DO COMPONENTE COM UM OBJETO DE Produto
+            SETO O EVENTO notificar COM A FUNÇÃO onNotificar(), ENTÃO AO RECEBER ESSE EVENTO ELE CHAMA ESSA FUNÇÃO
+        -->
+        
+    </app-produtos-alertas>
 </div>
