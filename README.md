@@ -3,7 +3,7 @@
 
 Aplicação e estudo dos conceitos básicos de programação em ANGULAR
 
-**Conceitos abordados:**  
+  **Conceitos abordados:**  
 - variáveis e constantes,
 - interpolação,
 - dot notation,
@@ -18,15 +18,15 @@ Aplicação e estudo dos conceitos básicos de programação em ANGULAR
 - emissores de eventos,  
 - operadores: aritméticos, de atribuição, relacionais, lógicos, unários, binários e ternários,
 - rotas;
+  
+  **Rodando aplicações:**  
+``cd Loja | ng s --live-reload  
+cd Rotas | ng s --live-reload``
 
-- **Rodando aplicações:**  
-cd Loja | ng s --live-reload  
-cd Rotas | ng s --live-reload  
 ### Telas de resultados:<br>![imagem da aplicação](https://dataxstudios.com.br/assets/images/github/angular_tour_of_heroes_1.PNG)  
 ![imagem da aplicação](https://dataxstudios.com.br/assets/images/github/angular_tour_of_heroes_2.PNG)
 
-
-**✨Atualizações da linguagem + comentários.**  
+  **✨Atualizações da linguagem + comentários.**  
 
 Fiquem por dentro deste repositório com atualizações sempre que possível!  
 [ANGULAR] [JAVASCRIPT] [RXJS] #angular #javascript #rxjs
