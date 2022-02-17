@@ -3,7 +3,7 @@
 
 Aplicação e estudo dos conceitos básicos de programação em ANGULAR
 
-- **Conceitos abordados:**  
+**Conceitos abordados:**  
 - variáveis e constantes,
 - interpolação,
 - dot notation,
