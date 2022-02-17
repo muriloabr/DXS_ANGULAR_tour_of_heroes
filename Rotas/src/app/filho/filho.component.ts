@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-filho',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filho.component.css']
 })
 export class FilhoComponent implements OnInit {
-
-  constructor() { }
+filho: string;
+  constructor(private rota: ActivatedRoute, private router: Router) {
+    this.filho = "";
+  }
 
   ngOnInit(): void {
+    this.rota.queryParams.subscribe(params => {
+    this.filho = this.router.url + " | PARAM id VALOR: " + params["id"];
+    }); //CAPTANDO URL PRA EXIBIR
   }
 
 }

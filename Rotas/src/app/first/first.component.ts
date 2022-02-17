@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //IMPORTANDO PARA CAPTAR PARAMETROS DA ROTA
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-first',
@@ -9,7 +9,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class FirstComponent implements OnInit {
   umId: string = '';
-  constructor(private rota: ActivatedRoute) { }
+  constructor(private rota: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.rota.queryParams.subscribe(params => {
