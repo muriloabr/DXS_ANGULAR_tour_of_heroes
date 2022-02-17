@@ -7,6 +7,9 @@ Aplicação e estudo dos conceitos básicos de programação em ANGULAR
 classes, objetos, instanciação, lambda, listas, interface, decorator, input e output, emissores de eventos,  
 operadores: aritméticos, de atribuição, relacionais, lógicos, unários, binários e ternários;
 
+- **Rodando aplicações:**  
+cd Loja | ng s --live-reload  
+cd Rotas | ng s --live-reload  
 ### Telas de resultados:<br>![imagem da aplicação](https://dataxstudios.com.br/assets/images/github/angular_tour_of_heroes_1.PNG)  
 ![imagem da aplicação](https://dataxstudios.com.br/assets/images/github/angular_tour_of_heroes_2.PNG)
 
